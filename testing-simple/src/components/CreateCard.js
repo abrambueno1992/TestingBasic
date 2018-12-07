@@ -7,7 +7,15 @@ class CreateCard extends Component {
     this.state = {};
   }
   render() {
-    return <div>This is the create card component</div>;
+    return (
+      <div>
+        <div>Card display image</div>
+        <div>List of cards already saved.</div>
+        <div>Suggested board name list</div>
+        <button>Create Board</button>
+        This is the create card component
+      </div>
+    );
   }
 }
 
