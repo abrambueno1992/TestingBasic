@@ -7,8 +7,21 @@ beforeEach(() => {
   wrapped = shallow(<Create />);
 });
 
-it("shows a comment box", () => {
+it("has the correct classNames for the styling", () => {
+  expect(wrapped.find("div.Test").length).toEqual(1);
+  expect(wrapped.find("div.NewImage").length).toEqual(1);
+  expect(wrapped.find("div.Wrap").length).toEqual(1);
+  expect(wrapped.find("div.Boards").length).toEqual(1);
+  expect(wrapped.find("div.BoardImage").length).toEqual(1);
+  expect(wrapped.find("div.Suggestions").length).toEqual(1);
   //   expect(wrapped.find("div").length).toEqual(1);
+});
+describe("button clicked, changed state", () => {
+  //   wrapped.find("button").simulate("submit", {
+  //     target: { value: "New CommeNt" }
+  //   });
+  //   wrapped.update();
+  //   });
 });
 
 // it("shows a comment list", () => {

@@ -13,10 +13,16 @@ class CreateCard extends Component {
             "https://i.pinimg.com/200x150/6c/75/e9/6c75e9222bb6da16f30b14e0ea9fe6ab.jpg",
           name: "Butterfly"
         }
-      ]
+      ],
+      selected: ""
     };
   }
+  handleChange = e => {
+    e.preventDefault();
+    this.setState({ selected: e.target.value });
+  };
   render() {
+    console.log("change", this.state.selected);
     return (
       <div className="Test">
         <div className="NewImage">
@@ -42,7 +48,13 @@ class CreateCard extends Component {
             {this.state.suggestions.map(suggest => {
               return (
                 <li key={suggest}>
-                  <button>{suggest}</button>
+                  <button
+                    className={suggest}
+                    value={suggest}
+                    onClick={this.handleChange}
+                  >
+                    {suggest}
+                  </button>
                 </li>
               );
             })}
