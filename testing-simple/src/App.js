@@ -22,7 +22,7 @@ class App extends Component {
             Learn React
           </a>
         </header> */}
-        <Search />
+        {/* <Search /> */}
         <CreateCard />
       </div>
     );

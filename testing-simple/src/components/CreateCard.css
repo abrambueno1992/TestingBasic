@@ -1,0 +1,27 @@
+.Test {
+  text-align: center;
+  display: inline-flex;
+  /* display: inline-block; */
+  width: 100%;
+  border: 1px solid rebeccapurple;
+  /* margin-left: 10%; */
+}
+.NewImage {
+  width: 33%;
+  border: 1px solid rebeccapurple;
+  /* margin-right: 20%; */
+}
+.Wrap {
+  width: 66%;
+  border: 1px solid rebeccapurple;
+}
+.Boards {
+  border: 1px solid rebeccapurple;
+}
+.BoardImage {
+  width: 30%;
+  height: 30%;
+}
+.Suggestions {
+  border: 1px solid rebeccapurple;
+}
